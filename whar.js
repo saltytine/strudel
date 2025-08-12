@@ -22,5 +22,17 @@ stack(
        [4 2 [2 ~] [7 ~] 0@2 4@2]
      >`.scale("g2:lydian").note().s("gm_bassoon")
      .room(0.9).gain(0.5),
+
+     `<
+       [~ ~ sd ~ ~ ~ ~ sd]
+     >`.s("sd"),
+  
+     `<
+       [bd bd ~ ~ ~ bd ~ ~]
+     >`.s("bd"),
+  
+     `<
+       [~ ~ ~ ~ hh ~ hh ~]
+     >`.s("hh")
   
 ).cpm(120/4)//.pianoroll()
