@@ -35,5 +35,5 @@ stack(
   .slow(2).superimpose(x=>x.add(.02))
   .note().gain(.3)
   .s('sawtooth').cutoff(600).color('#F8E71C'),
-).fast(6/2)
+).fast(3/2)
 //.pianoroll({fold:1})
