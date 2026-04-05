@@ -1,4 +1,4 @@
-$: note("[C G], <D Fb B C A>*[0.5,2]")
+$: note("[C G], <C E G B D>*[0.5,2]")
   // .rev()
   .sound("sawtooth").cpm(30).gain(.4)
 .lpf("<100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400 1300 1200 1100 1000 900 800 700 600 500 400 300 200>/4")
@@ -7,13 +7,20 @@ $: note("[C G], <D Fb B C A>*[0.5,2]")
   .pan("<0 1>/2")  
 .delay(1)
 .roomsize("10")
-// .slow("1, .5, .25") // swap to this
-
-  // $: note("F")
-  //   .sound("piano").cpm(30)
-  //  .lpf(800)
-
-  
 .slow(".1275").gain(.8)
+//.slow("1, .5, .25") // swap to this
+$: sound("[bd sd]/4").bank("9000").cpm(30)
+  .lpf("900")
+  .roomsize('10')
+  .slow(".1275").gain(.8)
+$: note("<C2 G2>")
+.sound("gm_acoustic_bass").cpm(30)
+.lpf(800)
+.slow(".1275").gain(.8)
+$: note("<C4 E4 G4 B4 D4>*2")
+.sound("gm_lead_6_voice").cpm(30)
+.lpf("<100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400 1300 1200 1100 1000 900 800 700 600 500 400 300 200>/4")
+.roomsize("10")
+.slow(".1275").gain(.5)
 
 // @version 1.1
