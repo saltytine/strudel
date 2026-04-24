@@ -9,7 +9,7 @@ stack(
           "3@2 3 0@2 0 3 0".late(k*3)))
      .chord("<G [Bm E] [G@3 C] D>".slow(2)).voicing()
      .s("gm_pad_warm").clip(1).release(0.2).gain(0.5)
-     .room(0.9).gain(0.5),
+     .room(0.9).gain(0.7),
      
      `<
        [4 3 [2 ~] [1 ~] 0@2 4@2]
@@ -21,7 +21,7 @@ stack(
        [4 2 [2 ~] [7 ~] 0@2 4@2]
        [4 2 [2 ~] [7 ~] 0@2 4@2]
      >`.scale("g2:lydian").note().s("gm_bassoon")
-     .room(0.9).gain(0.5),
+     .room(0.9).gain(0.7),
 
      `<
        [~ ~ ~ sd ~ sd ~ ~ ~ ~]
